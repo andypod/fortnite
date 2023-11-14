@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 24px;
+}
+
+.button {
+  background-color: #0f9d58;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #099f3d;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Fortnite Battle Pass</h1>
+  <p>Season 69 - $6969/day</p>
+  <button class="button" onclick="showPopup()">Buy Battle Pass</button>
+</div>
+
+<div class="popup" id="popup">
+  <h2>Yay, you bought it!</h2>
+</div>
+<script>
+  
+function showPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
+
+</script>
+
+
+</body>
+</html>
